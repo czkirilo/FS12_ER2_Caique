@@ -1,6 +1,6 @@
 ﻿namespace Chapter.Models
 {
-    public class livro
+    public class Livro
     {
         public int Id { get; set; }
         public string Titulo { get; set; }

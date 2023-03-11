@@ -10,9 +10,9 @@ namespace Chapter.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if(!optionsBuilder.IsConfigured)
-            {  optionsBuilder.UseSqlServer("Data Source = DESKTOP-F2ABGDE\\SQLEXPRESS ; initial catalog = Chapter; integrated security = true"); }
+            {  optionsBuilder.UseSqlServer("Data Source = DESKTOP-F2ABGDE\\SQLEXPRESS; initial catalog = Chapter; Integrated Security = true; Trust Server Certificate=true"); }
         }
 
-        public DbSet<livro> livros { get; set; }
+        public DbSet<Livro> livros { get; set; }
     }
 }
